@@ -1,7 +1,36 @@
 body {
   background-color: green;
+  box-sizing: border-box;
 }
 .card {
   background-color: white;
-  display: flex;
+  display: inline-block;
+  margin: auto;
+  padding: 20px;
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+  position: relative;
+}
+.top-suit {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 50px;
+}
+.bottom-suit {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+}
+.spades.bottom-suit,
+.spades.top-suit {
+  content: ♠;
+}
+
+.number {
+  position: absolute;
+  padding: 80px;
+  font-size: 80px;
 }
