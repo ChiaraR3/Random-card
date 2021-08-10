@@ -24,13 +24,17 @@ body {
   right: 20px;
   font-size: 50px;
 }
-.spades.bottom-suit,
-.spades.top-suit {
-  content: ♠;
-}
 
 .number {
   position: absolute;
   padding: 80px;
   font-size: 80px;
+}
+.card heart.top-suit,
+.card heart.bottom-suit {
+  contain: ♥;
+}
+.card spade.top-suit,
+.card spade.bottom-suit {
+  contain: ♠;
 }
