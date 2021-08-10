@@ -6,35 +6,43 @@ body {
   background-color: white;
   display: inline-block;
   margin: auto;
-  padding: 20px;
-  width: 200px;
-  height: 300px;
+  padding: 80px;
+  padding-top: 180px;
+  width: 210px;
+  height: 200px;
   border-radius: 15px;
   position: relative;
+  font-size: 70px;
+  text-align: center;
 }
-.top-suit {
+.card:before {
   position: absolute;
   top: 20px;
   left: 20px;
-  font-size: 50px;
+  font-size: 70px;
 }
-.bottom-suit {
+.card:after {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  font-size: 50px;
+  font-size: 70px;
 }
 
-.number {
-  position: absolute;
-  padding: 80px;
-  font-size: 80px;
+.card.heart:before,
+.card.heart:after {
+  content: "\2665";
+  color: red;
 }
-.card heart.top-suit,
-.card heart.bottom-suit {
-  contain: ♥;
+.card.spade:before,
+.card.spade:after {
+  content: "\2660";
+  color: black;
 }
-.card spade.top-suit,
-.card spade.bottom-suit {
-  contain: ♠;
+.card.diamond:before,
+.card.diamond:after {
+  content: "\2666";
+}
+.card.club:before,
+.card.club:after {
+  content: "\2663";
 }
